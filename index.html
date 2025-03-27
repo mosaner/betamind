@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Labs | Digital Innovation Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; }
+
+        /* Hero Section */
+        .hero {
+            padding: 8rem 2rem;
+            text-align: center;
+            background: linear-gradient(135deg, #2b5876, #4e4376);
+            color: white;
+        }
+        
+        /* Portfolio Grid */
+        .portfolio-grid {
+            display: grid;
+            gap: 2rem;
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Add your custom CSS here */
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero" data-aos="fade-up">
+        <h1>We simplify the complex</h1>
+        <p class="subhead">A digital innovation studio dedicated to making life better</p>
+        <a href="#portfolio" class="cta-button">See How We Do It</a>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="approach" data-aos="fade-up">
+        <h2>Less is more, but better</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-heart"></i>
+                <h3>Research with Empathy</h3>
+                <p>We listen first. Every problem starts with people.</p>
+            </div>
+            <!-- Repeat for other approach cards -->
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-grid">
+        <div class="project-card" data-aos="zoom-in">
+            <img src="placeholder-project.jpg" alt="Project 1" loading="lazy">
+            <h3>Farm Health App</h3>
+            <p><strong>Problem:</strong> Farmers struggled to track crop health</p>
+            <p><strong>Solution:</strong> AI-powered SMS alert system</p>
+            <p><strong>Result:</strong> 30% fewer crop losses</p>
+        </div>
+        <!-- Repeat project cards -->
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" data-aos="fade-up">
+        <h2>Let's Solve Your Problem</h2>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="message" placeholder="Describe your challenge"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>"Innovation isn't about bells and whistles - it's about making tomorrow easier"</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>
